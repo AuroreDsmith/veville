@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Nunito&family=Permanent+Marker&display=swap');
+
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Dongle', sans-serif; */
+
+/****************** GENERAL ************************/
+body,
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+/* NAVBAR */
+.navbar {
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+
+/******************** PAGE HOME *********************/
+h1 {
+  font-size: 4rem;
+  font-family: 'Permanent Marker', cursive; 
+}
+#home-image {
+  background: url(../Assets/img/home-car3.png) no-repeat center;
+  background-size: cover;
+  background-clip: border-box;
+  height: 85vh;
+}
+#home-text, #home-image p {
+  position: relative;
+  top: 6%;
+  text-align: center;
+  color: #fff;
+}
+#home-form {
+  position: relative;
+  top: 65%;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  
+}
+#form_reservation {
+  width: 60%;
+  margin: 0 auto;
+}
+#home-input input, #home-input select {
+  background-color: rgba(255,255,255,0.6);
+}
+
+/* *******************MODAL**************************/
+.form-control,
+.form-control:focus,
+.input-group-addon {
+  border-color: #e1e1e1;
+}
+.form-control,
+.btn {
+  border-radius: 3px;
+}
+.signup-form {
+  width: 100%;
+  margin: 0 auto;
+}
+.signup-form form {
+  color: #999;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  margin-left: 10%;
+  width: 80%;
+  background: #fff;
+}
+.signup-form h2 {
+  color: #333;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form .form-control {
+  min-height: 38px;
+  box-shadow: none !important;
+}
+.signup-form .input-group-addon {
+  max-width: 42px;
+  text-align: center;
+}
+
+.signup-form .btn {
+  font-size: 1rem;
+  font-weight: bold;
+  background: #19aa8d;
+  border: none;
+  width: 100%;
+}
+.signup-form .btn:hover,
+.signup-form .btn:focus {
+  background: #179b81;
+  outline: none;
+}
+.signup-form a {
+  color: #fff;
+  text-decoration: underline;
+}
+.signup-form a:hover {
+  text-decoration: none;
+}
+.signup-form form a {
+  color: #19aa8d;
+  text-decoration: none;
+}
+.signup-form form a:hover {
+  text-decoration: underline;
+}
+
+
+/************************** FORM **********************************/
+textarea {
+  border: 2px solid #e1e1e1;
+}
+
+
+/*********************** MEDIA QUERIES *****************************/
+@media screen and (max-width: 768px) {
+  #home-form {
+    top: 10%;
+  }
+  #home-image {
+    position: relative;
+    background-position: left 30% top 5%;
+    height: 95vh;
+  }
+  /* Opacité sur l'image de fond mais pas sur le texte */
+  #home-image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  #home-input input, #home-input select {
+    background-color: rgba(255,255,255,1);
+  }
+  .justify-content-end {
+    justify-content: start !important;
+  }
+  #valider_vehicule {
+    text-align: center !important;
+    margin-top: 2rem !important;
+  }
+  #valider_vehicule button {
+    width: 100%;
+  }
+  
+}
+

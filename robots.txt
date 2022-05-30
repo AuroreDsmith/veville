@@ -1,0 +1,5 @@
+
+user-agent: *
+Allow: /
+
+Sitemap: https://www.auroredesmis.com/sitemap.xml
